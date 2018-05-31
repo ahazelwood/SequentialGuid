@@ -1,15 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30110.0
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SequentialGuid.Tests", "SequentialGuid.Tests\SequentialGuid.Tests.csproj", "{3D7B8388-C642-4D5F-BEF1-1BA091A7D22C}"
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{839F7BDA-2E4D-444F-95A1-E88619E277F0}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SequentialGuid_net45", "SequentialGuid_net45\SequentialGuid_net45.csproj", "{BBD9D5C6-9C6D-477C-A97E-EBFBA195375E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SequentialGuid", "src\SequentialGuid\SequentialGuid.csproj", "{7DB5AB6A-B5A5-416F-A39B-A78EFA9B2D83}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SequentialGuid_net40", "SequentialGuid_net40\SequentialGuid_net40.csproj", "{810F8808-7B26-472A-938D-BCF5F19ED8A1}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SequentialGuid", "SequentialGuid\SequentialGuid.csproj", "{EEEAB15B-B8B3-4994-9040-2E37354FDE57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SequentialGuid.Tests", "src\SequentialGuid.Tests\SequentialGuid.Tests.csproj", "{7A44BCD7-06B3-4B1A-A473-FA636DA8A426}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,24 +21,19 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3D7B8388-C642-4D5F-BEF1-1BA091A7D22C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3D7B8388-C642-4D5F-BEF1-1BA091A7D22C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3D7B8388-C642-4D5F-BEF1-1BA091A7D22C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3D7B8388-C642-4D5F-BEF1-1BA091A7D22C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BBD9D5C6-9C6D-477C-A97E-EBFBA195375E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BBD9D5C6-9C6D-477C-A97E-EBFBA195375E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BBD9D5C6-9C6D-477C-A97E-EBFBA195375E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BBD9D5C6-9C6D-477C-A97E-EBFBA195375E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{810F8808-7B26-472A-938D-BCF5F19ED8A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{810F8808-7B26-472A-938D-BCF5F19ED8A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{810F8808-7B26-472A-938D-BCF5F19ED8A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{810F8808-7B26-472A-938D-BCF5F19ED8A1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EEEAB15B-B8B3-4994-9040-2E37354FDE57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EEEAB15B-B8B3-4994-9040-2E37354FDE57}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EEEAB15B-B8B3-4994-9040-2E37354FDE57}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EEEAB15B-B8B3-4994-9040-2E37354FDE57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DB5AB6A-B5A5-416F-A39B-A78EFA9B2D83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DB5AB6A-B5A5-416F-A39B-A78EFA9B2D83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DB5AB6A-B5A5-416F-A39B-A78EFA9B2D83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DB5AB6A-B5A5-416F-A39B-A78EFA9B2D83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A44BCD7-06B3-4B1A-A473-FA636DA8A426}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A44BCD7-06B3-4B1A-A473-FA636DA8A426}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A44BCD7-06B3-4B1A-A473-FA636DA8A426}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A44BCD7-06B3-4B1A-A473-FA636DA8A426}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1D6765EC-7104-460B-90CE-01EA64397E6B}
 	EndGlobalSection
 EndGlobal

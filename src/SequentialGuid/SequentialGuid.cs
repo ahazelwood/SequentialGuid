@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using System.Linq;
 using System.Security;
@@ -6,14 +6,16 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading;
 
-namespace Buvinghausen.SequentialGuid
+namespace SequentialGuid
 {
 	/// <summary>
 	/// Generates sequential Guids based on the MongoDB ObjectId specification only uses a 16 byte value in order to be Guid compatible.
 	/// The additional bytes are taken up by using a 64 bit time value rather than the 32 bit Unix epoch
 	/// </summary>
-	static class SequentialGuid
+	internal static class SequentialGuid
 	{
+		internal static readonly DateTime UnixEpoch =
+			new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
 		private static readonly byte[] StaticMachinePid;
 		private static int _staticIncrement;
 
